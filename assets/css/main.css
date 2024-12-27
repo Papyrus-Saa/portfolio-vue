@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2b2323;
+  --dark-color: #023e3a;
+  --light-color: #4c00d2;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* En tu archivo global CSS */
+@layer utilities {
+  .w-calc-remaining {
+    width: calc(100% - 300px);
+  }
+}
+
+.w-calc-remaining {
+  width: calc(100% - 300px);
+}
+
+
+/* dark:hover:bg-[#185600] hover:bg-[#5100e8] dark:bg-[#023e3a] bg-[#4c00d2] */
+
+
+Code kopieren .drawerContainer {
+  touch-action: none;
+  overflow-y: auto;
+}
+
+@keyframes defaultbackgroundshift {
+  0%, 100% {
+    box-shadow: 0px 0px 29px 11px #ff6347; /* Red */
+  }
+
+  10% {
+    box-shadow: 0px 0px 29px 11px #ff4500; /* Orange Red */
+  }
+
+  20% {
+    box-shadow: 0px 0px 29px 11px #f1c40f; /* Yellow */
+  }
+
+  30% {
+    box-shadow: 0px 0px 29px 11px #2ecc71; /* Green */
+  }
+
+  40% {
+    box-shadow: 0px 0px 29px 11px #3498db; /* Blue */
+  }
+
+  50% {
+    box-shadow: 0px 0px 29px 11px #9b59b6; /* Purple */
+  }
+
+  60% {
+    box-shadow: 0px 0px 29px 11px #e74c3c; /* Red */
+  }
+
+  70% {
+    box-shadow: 0px 0px 29px 11px #8e44ad; /* Purple */
+  }
+
+  80% {
+    box-shadow: 0px 0px 29px 11px #1abc9c; /* Teal */
+  }
+
+  90% {
+    box-shadow: 0px 0px 29px 11px #34495e; /* Dark Blue */
+  }
+
+  100% {
+    box-shadow: 0px 0px 29px 11px #f39c12; /* Orange */
+  }
+
+  110% {
+    box-shadow: 0px 0px 29px 11px #e67e22; /* Orange */
+  }
+
+  120% {
+    box-shadow: 0px 0px 29px 11px #2980b9; /* Blue */
+  }
+}
+
+@keyframes defaultbordershift {
+  0%, 100% {
+    color:  #ff6347; /* Red */
+  }
+
+  10% {
+    color:  #ff4500; /* Orange Red */
+  }
+
+  20% {
+    color:  #f1c40f; /* Yellow */
+  }
+
+  30% {
+    color:  #2ecc71; /* Green */
+  }
+
+  40% {
+    color:  #3498db; /* Blue */
+  }
+
+  50% {
+    color:  #9b59b6; /* Purple */
+  }
+
+  60% {
+    color:  #e74c3c; /* Red */
+  }
+
+  70% {
+    color:  #8e44ad; /* Purple */
+  }
+}
