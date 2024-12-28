@@ -1,6 +1,6 @@
 <template>
   <div class="drawer">
-    <button @click="openDrawer" class="fixed top-0">
+    <button @click="openDrawer" class="fixed top-0 left-0">
       <!-- AdminIcon -->
       <AdminIcon />
     </button>
@@ -8,14 +8,13 @@
     <!-- Drawer -->
     <div
       v-show="isDrawerOpen"
-      class="drawerContainer dark:text-gray-200 text-gray-700"
+      class="drawerContainer dark:text-gray-200 text-gray-900 w-11/12 sm:w-[300px]"
       :class="animationClass"
-      :style="{width: 300 + 'px'}"
     >
       <div class="flex justify-between">
-        <div class="w-full">
+        <div class="">
           <!-- ColoseAdmin -->
-          <ClockHidden v-if="isDrawerOpen" @click="closeDrawer" />
+          <ClockHidden class="sm:hidden" v-if="isDrawerOpen" @click="closeDrawer" />
         </div>
         <!-- ImgComponent -->
         <ImgComponent />
@@ -38,9 +37,7 @@ import AdminIcon from "../icons/AdminIcon.vue";
 import AboutInDrawer from "./AboutInDrawer.vue";
 import ImgComponent from "./ImgComponent.vue";
 
-const props = defineProps<{
-  resizeWidth: number;
-}>();
+
 
 
 const { isDrawerOpen, animationClass, openDrawer, closeDrawer } =
@@ -53,7 +50,7 @@ const { isDrawerOpen, animationClass, openDrawer, closeDrawer } =
   left: 0;
   position: fixed;
   overflow: auto;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
   z-index: 1000;
 }
 

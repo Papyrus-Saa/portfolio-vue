@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center">
+  <div class="flex justify-center items-center mb-12">
     <div class="w-32 sm:w-40 h-8 flex justify-between items-center">
       <div
         :class="[

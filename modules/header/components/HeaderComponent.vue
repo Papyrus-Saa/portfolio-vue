@@ -14,5 +14,5 @@ useDrawerControl();
 import ToggleModeButton from "~/theme/components/ToggleModeButton.vue";
 import DigitalClock from "./DigitalClock.vue";
 import { useDrawerControl } from "~/modules/drawer/composables/useDreawerScroll";
-import AdminIcon from "~/modules/drawer/icons/AdminIcon.vue";
+
 </script>

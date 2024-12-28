@@ -1,8 +1,17 @@
+<script setup lang="ts">
+import BarMeaning from '~/modules/drawer/components/BarMeaning.vue';
+import BarPro from '~/modules/drawer/components/BarPro.vue';
+
+</script>
+
 <template>
-  <div class="leftContent bg-red-950 mb-8 sm:mb-0">
-    <h1>Bottom Left Content</h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati id nostrum dolore non iure aliquid saepe animi nobis molestiae quidem modi nam asperiores sequi tempora, suscipit ea cupiditate dolorem.
+  <div class="leftContent mb-8 sm:mb-0">
+    <h1>Habilidades</h1>
+    <!-- <div class="topRightContent mb-8"> -->
+ <BarPro />
+ <BarMeaning />
   </div>
+  <!-- </div> -->
 </template>
 
 <style scoped>

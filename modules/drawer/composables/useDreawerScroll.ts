@@ -1,56 +1,74 @@
 import { ref, watch, onMounted, onUnmounted } from "vue";
 
 export function useDrawerControl() {
-  const isDrawerOpen = ref<boolean>(false);
+  const isDrawerOpen = ref(true);
   const animationClass = ref("");
-  const resizeWidth = ref<number>(100);
-  const drawerResizeWidth = ref<boolean>(false);
 
-  const openDrawer = () => {
-    animationClass.value = "fadeInLeft";
+  const openDrawer = (isMobile = false) => {
+    if (isMobile) {
+      animationClass.value = "fadeInLeft";
+    } else {
+      animationClass.value = "";
+    }
     isDrawerOpen.value = true;
   };
 
-  const closeDrawer = () => {
-    animationClass.value = "fadeOutLeft";
-    setTimeout(() => {
+  const closeDrawer = (isMobile = false) => {
+    if (isMobile) {
+      animationClass.value = "fadeOutLeft";
+      setTimeout(() => {
+        isDrawerOpen.value = false;
+      }, 2000);
+    } else {
+      animationClass.value = "";
       isDrawerOpen.value = false;
-    }, 2000);
+    }
   };
+
+  const handleResize = () => {
+    const width = window.innerWidth;
+
+    if (width > 640 && !isDrawerOpen.value) {
+      openDrawer(false);
+    }
+  };
+
+  const handleMobileOpen = () => {
+    const isMobile = window.innerWidth <= 640;
+    openDrawer(isMobile);
+  };
+
+  const handleMobileClose = () => {
+    const isMobile = window.innerWidth <= 640;
+    closeDrawer(isMobile);
+  };
+
+  onMounted(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
+
+  onUnmounted(() => {
+    window.removeEventListener("resize", handleResize);
+  });
 
   watch(isDrawerOpen, (newVal) => {
     const html = document.documentElement;
     const body = document.body;
 
     if (newVal) {
-      // Bloquea el fondo para evitar scroll fuera del drawer
       html.style.overflow = "hidden";
       body.style.overflow = "hidden";
     } else {
-      // Habilita el fondo
       html.style.overflow = "";
       body.style.overflow = "";
     }
   });
 
-  watch(resizeWidth, (newWidth) => {
-    if (newWidth > 768 && !isDrawerOpen.value) {
-      openDrawer();
-    } else if (newWidth <= 768 && isDrawerOpen.value) {
-      closeDrawer();
-    }
-  });
-
-
-
   return {
     isDrawerOpen,
     animationClass,
-    resizeWidth,
-    drawerResizeWidth,
-
-    openDrawer,
-    closeDrawer,
-
+    openDrawer: handleMobileOpen, // Llama a la función específica para móviles
+    closeDrawer: handleMobileClose, // Llama a la función específica para móviles
   };
 }

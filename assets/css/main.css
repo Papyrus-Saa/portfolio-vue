@@ -25,12 +25,10 @@ body {
 }
 
 .w-calc-remaining {
-  width: calc(100% - 300px);
+  width: calc(100% - 400px);
 }
 
-
 /* dark:hover:bg-[#185600] hover:bg-[#5100e8] dark:bg-[#023e3a] bg-[#4c00d2] */
-
 
 Code kopieren .drawerContainer {
   touch-action: none;
@@ -38,7 +36,8 @@ Code kopieren .drawerContainer {
 }
 
 @keyframes defaultbackgroundshift {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0px 0px 29px 11px #ff6347; /* Red */
   }
 
@@ -92,35 +91,36 @@ Code kopieren .drawerContainer {
 }
 
 @keyframes defaultbordershift {
-  0%, 100% {
-    color:  #ff6347; /* Red */
+  0%,
+  100% {
+    color: #ff6347; /* Red */
   }
 
   10% {
-    color:  #ff4500; /* Orange Red */
+    color: #ff4500; /* Orange Red */
   }
 
   20% {
-    color:  #f1c40f; /* Yellow */
+    color: #f1c40f; /* Yellow */
   }
 
   30% {
-    color:  #2ecc71; /* Green */
+    color: #2ecc71; /* Green */
   }
 
   40% {
-    color:  #3498db; /* Blue */
+    color: #3498db; /* Blue */
   }
 
   50% {
-    color:  #9b59b6; /* Purple */
+    color: #9b59b6; /* Purple */
   }
 
   60% {
-    color:  #e74c3c; /* Red */
+    color: #e74c3c; /* Red */
   }
 
   70% {
-    color:  #8e44ad; /* Purple */
+    color: #8e44ad; /* Purple */
   }
 }

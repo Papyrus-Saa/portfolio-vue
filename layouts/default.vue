@@ -1,30 +1,25 @@
 <template>
-  <div
-    :class="['text-black dark:text-white dark:bg-neutral-900 duration-500 ']"
-  >
+  <div :class="['text-black dark:text-white dark:bg-neutral-900 duration-500']">
     <!-- Header -->
     <!-- Scroll -->
-    <main class="overflow-hidden">
-      <div class="">
-        <!-- <div class=" sm:mr-28   sm:mx-auto  sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-4 sm:p-4 lg:justify-items-center w-calc-remaining"> -->
-          <div class="sm:flex justify-end" :style="{ width: resizeWidth + '%' }">
+    <main class="h-screen overflow-auto">
+      <!-- <div class=" sm:mr-28   sm:mx-auto  sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-4 sm:p-4 lg:justify-items-center w-calc-remaining"> -->
+      <div class="sm:flex justify-end">
+        <Drawer />
+        <div :class="['w-full  sm:w-calc-remaining sm:px-6']">
+          <HeaderComponent />
 
-          <Drawer :resize-width="300" />
-          <div :class="['w-full overflow-auto sm:w-calc-remaining', ]
-          "
-          >
+          <TitleComponent />
+          <TopLeftContent />
 
-            <HeaderComponent />
-            <TopLeftContent />
+          <TopRightContent />
 
-            <TopRightContent />
+          <BottomLeftContent />
 
-            <BottomLeftContent />
-
-            <BottomRightContent />
-          </div>
+          <BottomRightContent />
         </div>
       </div>
+
       <slot />
       <!-- Footer -->
     </main>
@@ -36,9 +31,6 @@
 </template>
 
 <script setup lang="ts">
-
-
-
 import TopLeftContent from "~/modules/content/components/TopLeftContent.vue";
 import TitleComponent from "~/modules/content/components/TitleComponent.vue";
 import BarPro from "~/modules/drawer/components/BarPro.vue";
@@ -51,8 +43,8 @@ import BottomLeftContent from "~/modules/content/components/BottomLeftContent.vu
 import BottomRightContent from "~/modules/content/components/BottomRightContent.vue";
 import { useDrawerControl } from "~/modules/drawer/composables/useDreawerScroll";
 
-const { isDrawerOpen, animationClass, openDrawer, closeDrawer, resizeWidth } =
-useDrawerControl();
+const { isDrawerOpen, animationClass, openDrawer, closeDrawer } =
+  useDrawerControl();
 </script>
 
 <style scoped></style>

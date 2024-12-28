@@ -4,28 +4,21 @@ import LinkIcon from "~/shared/icons/LinkIcon.vue";
 </script>
 
 <template>
-  <div
-    class="topLeftContent w-full h-full flex flex-col justify-around items-center p-2 mb-8"
-  >
-    <h3 class="mb-4 text-2xl">Here do you will find the Pokémon's app</h3>
-    <img
-      class="w-20 h-20 object-cover rounded-full mb-4"
-      src="/assets/img/pokemon-app.png"
-      alt="pokemon-avatar"
-    />
-    <p>
-      In this Pokémon project, I used Next.js with getStaticPaths and
-      getStaticProps to dynamically generate and revalidate 151 static pages
-      using the Pokémon API. Tailwind CSS was implemented for a clean design,
-     <span class="text-yellow-500 font-semibold">but the project is not responsive</span>. Dynamic metadata enhances SEO and user
-      experience. <span class="text-red-500">Non-existing Pokémon requests redirect users to a custom 404
-        page</span>.
-    </p>
+     <div class="flex flex-col justify-between text-center p-2 mb-8 dark:bg-black bg-gray-200 w-full py-6">
 
-    <LinkButton>
+      <h3 class="font-bold">German | Shop</h3>
+      <p>This is a clone of Tesla's Shop, although not an exact replica, as I’ve customized some styles and features to give it a unique touch. The project leverages Next.js, Docker, Tailwind CSS, Prisma, and TablePlus, creating an efficient and visually appealing solution while maintaining scalability and performance.</p>
+      <LinkButton class="mx-auto">
+      <a
+        href="https://german-shop-d5ycjkyhj-ramons-projects-67ad5b82.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-class"
+      >
       <LinkIcon />
+    </a>
     </LinkButton>
-  </div>
+     </div>
 </template>
 
 <style scoped></style>

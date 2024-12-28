@@ -52,7 +52,7 @@ const setShowShadow = (value) => {
 <style scoped>
 .buttonIcon {
   position: fixed;
-  top: 50%;
+  bottom: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -87,7 +87,7 @@ const setShowShadow = (value) => {
   border-radius: 10px;
   padding: 0.5em;
   position: fixed;
-  top: 54%;
+  bottom: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
