@@ -1,15 +1,16 @@
 <template>
-  <div :class="['text-black dark:text-white dark:bg-neutral-900 duration-500']">
+  <div :class="['text-black dark:text-white dark:bg-neutral-950 duration-500']">
     <!-- Header -->
     <!-- Scroll -->
     <main class="h-screen overflow-auto">
       <!-- <div class=" sm:mr-28   sm:mx-auto  sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-4 sm:p-4 lg:justify-items-center w-calc-remaining"> -->
       <div class="sm:flex justify-end">
         <Drawer />
-        <div :class="['w-full  sm:w-calc-remaining sm:px-6']">
-          <HeaderComponent />
-
+        <div :class="['w-full  sm:w-calc-remaining sm:px-6 ']">
+          <HeaderComponent/>
           <TitleComponent />
+
+         <div class="grid lg:grid-cols-2 gap-10 place-items-center">
           <TopLeftContent />
 
           <TopRightContent />
@@ -17,6 +18,7 @@
           <BottomLeftContent />
 
           <BottomRightContent />
+         </div>
         </div>
       </div>
 

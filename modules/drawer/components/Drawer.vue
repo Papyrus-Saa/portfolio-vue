@@ -8,7 +8,7 @@
     <!-- Drawer -->
     <div
       v-show="isDrawerOpen"
-      class="drawerContainer dark:text-gray-200 text-gray-900 w-11/12 sm:w-[300px]"
+      class="drawerContainer dark:text-gray-200 bg-gray-50 dark:bg-black text-gray-900 w-11/12 sm:w-[300px]"
       :class="animationClass"
     >
       <div class="flex justify-between">
@@ -36,7 +36,6 @@ import { useDrawerControl } from "../composables/useDreawerScroll";
 import AdminIcon from "../icons/AdminIcon.vue";
 import AboutInDrawer from "./AboutInDrawer.vue";
 import ImgComponent from "./ImgComponent.vue";
-
 
 
 

@@ -2,7 +2,7 @@
   <div class="imgContainer p-2 w-48">
     <img
       class="imagePic w-full h-auto object-cover border-b border-secondary-10 dark:border-primary-6 cursor-zoom-in"
-      src="../../../assets/img/r-pic.JPG"
+      :src="ramonsPic"
       alt="ramons-pic"
     />
     <span class='titlePic text-xs text-center block'
@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 
-
+import ramonsPic from '~/public/images/ramons-pic.jpeg'
 
 </script>
 <style scoped>

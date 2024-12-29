@@ -1,5 +1,5 @@
 <template>
-  <div :class="['combined-component', { 'centered-div-hidden': isHidden }]">
+  <div :class="['combined-component ', { 'centered-div-hidden': isHidden }]">
     <!-- Botón -->
     <button
       @click="toggleTheme"
@@ -14,7 +14,7 @@
         },
       ]"
     >
-      <span class="iconMode  rounded-full bg-black"></span>
+      <span class="iconMode  rounded-full bg-gray-600 dark:bg-purple-500"></span>
     </button>
 
     <!-- Flecha -->
@@ -60,9 +60,9 @@ const setShowShadow = (value) => {
 }
 
 .iconMode {
-  border: 1px solid var(--selected-color);
+  outline: 3px solid var(--selected-color);
   display: block;
-  width: 30px;
+  width: 10px;
   height: 10px;
 
 }

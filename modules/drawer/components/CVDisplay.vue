@@ -8,7 +8,7 @@ import DownloadIcon from '~/shared/components/DownloadIcon.vue';
 
       <div class="imgContainerCv p-4">
         <img
-          src="/assets/img/CV_pic.png"
+          src="/public/images/image-1.png"
           alt="Imagen de currículum"
           class="w-full h-full object-cover"
         />
@@ -16,7 +16,7 @@ import DownloadIcon from '~/shared/components/DownloadIcon.vue';
       <a
         href="/LebenslaufRamon.pdf"
         download="LebenslaufRamon.pdf"
-        class="flex px-4 py-2 rounded dark:hover:bg-gray-800 bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 transition w-fit mx-auto mb-4"
+        class="flex px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:text-green-500 transition w-fit mx-auto mb-4"
       >
         <DownloadIcon />
       </a>

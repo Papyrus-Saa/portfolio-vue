@@ -28,6 +28,27 @@ body {
   width: calc(100% - 400px);
 }
 
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+  height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+/* Aplica estilos al track (fondo del scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Color del track */
+  border-radius: 6px;
+}
+
+/* Aplica estilos al thumb (manija de desplazamiento) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color del thumb */
+  border-radius: 6px;
+}
+
+/* Opcional: Estilo del thumb al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /* dark:hover:bg-[#185600] hover:bg-[#5100e8] dark:bg-[#023e3a] bg-[#4c00d2] */
 
 Code kopieren .drawerContainer {
