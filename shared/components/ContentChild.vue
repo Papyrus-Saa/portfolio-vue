@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative w-full max-w-[500px] dark:bg-neutral-950 border border-gray-100 dark:border-neutral-900 hover:shadow-xl dark:shadow-md hover:dark:shadow-gray-700 duration-500 p-4 rounded mb-6 md:mx-auto"
+    class="containerDiv relative w-full max-w-[500px] dark:bg-neutral-950 border border-gray-100 dark:border-neutral-900 duration-500 p-4 rounded mb-6 md:mx-auto"
     @mouseenter="thumbnail = true"
     @mouseleave="thumbnail = false"
   >
@@ -73,6 +73,10 @@ defineProps<Props>();
 </script>
 
 <style scoped>
+.containerDiv {
+  box-shadow: 0px 0px 5px 0px  var(--selected-color);
+}
+
 .align-end {
   margin-left: auto;
 }

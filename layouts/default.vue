@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="initialScreen"
-    class="flex justify-center items-center fixed top-0 right-0 w-full h-screen z-20 bg-neutral-950 opacity-90"
+    class="flex justify-center items-center fixed top-0 right-0 w-full h-screen z-20 bg-neutral-950 opacity-90 "
   >
     <div class="flex flex-col">
       <h1 class="text-gray-700 font-serif text-xl">Hola, bienvenid@...😊</h1>
@@ -15,7 +15,7 @@
   </div>
   <div
     :class="[
-      'text-black dark:text-white dark:bg-neutral-950 duration-500',
+      'text-black bg-gray-200  dark:text-white dark:bg-neutral-950 duration-500',
       { ' blur-lg': initialScreen },
     ]"
   >
@@ -30,7 +30,7 @@
           <TitleComponent />
 
           <div
-            class="grid lg:grid-cols-2 gap-10 place-items-top xl:grid-cols-3"
+            class="grid lg:grid-cols-2 gap-10 place-items-end xl:grid-cols-3"
           >
             <TopLeftContent />
 
@@ -39,6 +39,7 @@
             <BottomLeftContent />
 
             <BottomRightContent />
+            <GithubIcon/>
           </div>
         </div>
       </div>
@@ -47,7 +48,6 @@
     </main>
     <InfiniteScroller />
 
-    <!-- <Testingg/> -->
     <SetColors />
   </div>
 </template>
@@ -64,6 +64,7 @@ import BottomLeftContent from "~/modules/content/components/BottomLeftContent.vu
 import BottomRightContent from "~/modules/content/components/BottomRightContent.vue";
 import { useDrawerControl } from "~/modules/drawer/composables/useDreawerScroll";
 import About from "~/pages/about.vue";
+import GithubIcon from "~/shared/icons/GithubIcon.vue";
 
 const initialScreen = ref<boolean>(true);
 
