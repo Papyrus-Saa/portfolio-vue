@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative w-full bg-gray-50 dark:bg-black shadow-md dark:shadow-gray-700 hover:shadow-xl duration-500 p-4 rounded mb-6  md:mx-auto"
+    class="relative w-full max-w-[500px] dark:bg-neutral-950 border border-gray-100 dark:border-neutral-900 hover:shadow-xl dark:shadow-md hover:dark:shadow-gray-700 duration-500 p-4 rounded mb-6  md:mx-auto"
     @mouseenter="thumbnail = true"
     @mouseleave="thumbnail = false"
   >

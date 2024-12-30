@@ -1,6 +1,6 @@
 <template>
   <div class="drawer">
-    <button @click="openDrawer" class="fixed top-0 left-0">
+    <button @click="openDrawer" class="fixed top-0 left-0 sm:hidden">
       <!-- AdminIcon -->
       <AdminIcon />
     </button>
@@ -8,7 +8,7 @@
     <!-- Drawer -->
     <div
       v-show="isDrawerOpen"
-      class="drawerContainer dark:text-gray-200 bg-gray-50 dark:bg-black text-gray-900 w-11/12 sm:w-[300px]"
+      class="fixed h-screen overflow-auto left-0 drawerContainer dark:text-gray-200 bg-gray-50 dark:bg-black lg:dark:bg-neutral-950 lg:dark:border-neutral-900 border-gray-200 border-l text-gray-900 w-11/12 sm:w-[300px]"
       :class="animationClass"
     >
       <div class="flex justify-between">
@@ -45,10 +45,6 @@ const { isDrawerOpen, animationClass, openDrawer, closeDrawer } =
 
 <style scoped>
 .drawerContainer {
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  overflow: auto;
   backdrop-filter: blur(30px);
   z-index: 1000;
 }

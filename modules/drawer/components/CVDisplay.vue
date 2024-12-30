@@ -3,7 +3,7 @@ import DownloadIcon from '~/shared/components/DownloadIcon.vue';
 </script>
 
 <template>
-    <div class="flex flex-col items-center text-center  p-6 mx-auto  rounded-md mb-2">
+    <div class="flex flex-col items-center text-center  p-6 mx-auto  rounded-md mb-20">
       <h3 class="text-xtext-xl font-semibold mb-4 ">Lebenslauf</h3>
 
       <div class="imgContainerCv p-4">
