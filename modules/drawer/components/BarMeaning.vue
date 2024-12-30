@@ -1,5 +1,5 @@
 <template>
-  <ul class="p-4">
+  <ul class="">
     <li v-for="inf in barInfo" :key="inf.name" class="flex flex-col">
       <div :style="{ color: inf.color }">
         <div class="flex items-center">
@@ -44,7 +44,7 @@ const barInfo = [
   },
   {
     name: "VUE",
-    details: "Vue JS-Framework für UI",
+    details: "Vue JS Framework für UI",
     separator: "|",
     color: "#42b883",
   },
@@ -55,10 +55,10 @@ const barInfo = [
     color: "#38B2AC",
   },
   {
-    name: "PV",
-    details: "Primevue UI-Komponenten für Vue.",
-    separator: "|",
-    color: "#42b983",
+    "name": "Rc",
+  "details": "React Library for interfaces.",
+  "separator": "|",
+  "color": "#61DAFB"
   },
 ];
 </script>

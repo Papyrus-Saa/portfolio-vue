@@ -1,27 +1,47 @@
 <template>
-  <div :class="['text-black dark:text-white dark:bg-neutral-950 duration-500']">
+  <div
+    v-if="initialScreen"
+    class="flex justify-center items-center fixed top-0 right-0 w-full h-screen z-20 bg-neutral-950 opacity-90"
+  >
+    <div class="flex flex-col">
+      <h1 class="text-gray-700 font-serif text-xl">Hola, bienvenid@...😊</h1>
+      <button
+        @click="offInitailScreen"
+        class="px-2 bg-red-700 rounded hover:bg-red-600 text-white"
+      >
+        Start
+      </button>
+    </div>
+  </div>
+  <div
+    :class="[
+      'text-black dark:text-white dark:bg-neutral-950 duration-500',
+      { ' blur-lg': initialScreen },
+    ]"
+  >
     <!-- Header -->
     <!-- Scroll -->
     <main class="h-screen overflow-auto">
       <!-- <div class=" sm:mr-28   sm:mx-auto  sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-4 sm:p-4 lg:justify-items-center w-calc-remaining"> -->
-      <div class="sm:flex justify-end ">
+      <div class="sm:flex justify-end">
         <Drawer />
         <div :class="['w-full sm:w-calc-remaining sm:px-12']">
-          <HeaderComponent/>
+          <HeaderComponent />
           <TitleComponent />
 
-         <div class="grid lg:grid-cols-2 gap-10 place-items-center xl:grid-cols-3">
-          <TopLeftContent />
+          <div
+            class="grid lg:grid-cols-2 gap-10 place-items-top xl:grid-cols-3"
+          >
+            <TopLeftContent />
 
-          <TopRightContent />
+            <TopRightContent />
 
-          <BottomLeftContent />
+            <BottomLeftContent />
 
-          <BottomRightContent />
-         </div>
+            <BottomRightContent />
+          </div>
         </div>
       </div>
-
       <slot />
       <!-- Footer -->
     </main>
@@ -35,7 +55,6 @@
 <script setup lang="ts">
 import TopLeftContent from "~/modules/content/components/TopLeftContent.vue";
 import TitleComponent from "~/modules/content/components/TitleComponent.vue";
-import BarPro from "~/modules/drawer/components/BarPro.vue";
 import Drawer from "~/modules/drawer/components/Drawer.vue";
 import HeaderComponent from "~/modules/header/components/HeaderComponent.vue";
 import InfiniteScroller from "~/modules/InfiniteScroll/components/InfiniteScroller.vue";
@@ -44,6 +63,15 @@ import TopRightContent from "~/modules/content/components/TopRightContent.vue";
 import BottomLeftContent from "~/modules/content/components/BottomLeftContent.vue";
 import BottomRightContent from "~/modules/content/components/BottomRightContent.vue";
 import { useDrawerControl } from "~/modules/drawer/composables/useDreawerScroll";
+import About from "~/pages/about.vue";
+
+const initialScreen = ref<boolean>(true);
+
+const offInitailScreen = () => {
+  setTimeout(() => {
+    initialScreen.value = false;
+  }, 500);
+};
 
 const { isDrawerOpen, animationClass, openDrawer, closeDrawer } =
   useDrawerControl();

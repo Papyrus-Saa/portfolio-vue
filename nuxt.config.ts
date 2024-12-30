@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   alias: {
     "@": "../my-portfolio",
   },
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   pages: true,
 
   modules: ["@primevue/nuxt-module"],

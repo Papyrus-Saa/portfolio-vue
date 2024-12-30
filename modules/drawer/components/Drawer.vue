@@ -8,7 +8,7 @@
     <!-- Drawer -->
     <div
       v-show="isDrawerOpen"
-      class="fixed h-screen overflow-auto left-0 drawerContainer dark:text-gray-200 bg-gray-50 dark:bg-black lg:dark:bg-neutral-950 lg:dark:border-neutral-900 border-gray-200 border-l text-gray-900 w-11/12 sm:w-[300px]"
+      class="fixed h-screen overflow-auto left-0 z-10 drawerContainer dark:text-gray-200 bg-gray-50 dark:bg-black lg:dark:bg-neutral-950 lg:dark:border-neutral-900 border-gray-200 border-l text-gray-900 w-11/12 sm:w-[300px]"
       :class="animationClass"
     >
       <div class="flex justify-between">
@@ -44,10 +44,7 @@ const { isDrawerOpen, animationClass, openDrawer, closeDrawer } =
 </script>
 
 <style scoped>
-.drawerContainer {
-  backdrop-filter: blur(30px);
-  z-index: 1000;
-}
+
 
 .fadeInLeft {
   animation: fadeInLeft 2s both;

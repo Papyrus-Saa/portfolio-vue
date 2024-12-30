@@ -1,10 +1,10 @@
 <template>
   <div
-    class="relative w-full max-w-[500px] dark:bg-neutral-950 border border-gray-100 dark:border-neutral-900 hover:shadow-xl dark:shadow-md hover:dark:shadow-gray-700 duration-500 p-4 rounded mb-6  md:mx-auto"
+    class="relative w-full max-w-[500px] dark:bg-neutral-950 border border-gray-100 dark:border-neutral-900 hover:shadow-xl dark:shadow-md hover:dark:shadow-gray-700 duration-500 p-4 rounded mb-6 md:mx-auto"
     @mouseenter="thumbnail = true"
     @mouseleave="thumbnail = false"
   >
-    <div class="w-full flex justify-between items-center px-4 mb-8">
+    <div class="w-full flex justify-between items-center mb-8">
       <h3 class="font-bold">{{ title }}</h3>
       <a :href="codeLink" target="_blank" rel="noopener noreferrer">
         <span
@@ -16,7 +16,7 @@
       </a>
     </div>
     <slot />
-    <div class="flex justify-between px-4">
+    <div class="flex justify-between">
       <LinkButton v-if="isLinkAvailable">
         <a
           :href="href"
@@ -27,7 +27,13 @@
           <LinkIcon />
         </a>
       </LinkButton>
-      <span v-if="inProgress" :class="['loading-dots text-orange-400', {'align-end': !isLinkAvailable}]">
+      <span
+        v-if="inProgress"
+        :class="[
+          'loading-dots text-orange-400',
+          { 'align-end': !isLinkAvailable },
+        ]"
+      >
         In progress<span class="dots text-orange-400 text-bold"></span>
       </span>
     </div>
@@ -67,9 +73,8 @@ defineProps<Props>();
 </script>
 
 <style scoped>
-
 .align-end {
- margin-left: auto;
+  margin-left: auto;
 }
 .loading-dots {
   font-family: Arial, sans-serif;

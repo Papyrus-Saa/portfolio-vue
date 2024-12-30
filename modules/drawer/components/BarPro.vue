@@ -1,6 +1,6 @@
 <template>
   <div class="w-full mb-10">
-    <div class="bars-container p-2 rounded-md mb-4">
+    <div class="bars-container  rounded-md mb-4">
       <div v-for="(bar, index) in bars" :key="index" class="bar-wrapper">
         <p class="bar-name ">{{ bar.name }}</p>
         <div
