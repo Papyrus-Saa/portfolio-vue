@@ -6,11 +6,13 @@ import germanShopThumbNail from "~/public/images/image-2.png";
 <template>
   <div class="relative">
     <ContentChild
-    :is-link-available="true"
+      :is-link-available="true"
       :is-code-available="true"
       :thumbnail-img="germanShopThumbNail"
       :in-progress="true"
       title="German | Shop"
+       code-link="https://github.com/Papyrus-Saa/german-shop"
+      href="https://german-shop-git-main-ramons-projects-67ad5b82.vercel.app/"
     >
       <p class="mb-4">
         This is a clone of Tesla's Shop, although not an exact replica, as I’ve

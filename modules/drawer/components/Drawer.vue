@@ -46,6 +46,7 @@ const { isDrawerOpen, animationClass, openDrawer, closeDrawer } =
 <style scoped>
 
 
+
 .fadeInLeft {
   animation: fadeInLeft 2s both;
 }

@@ -1,5 +1,5 @@
 <template>
-  <svg
+  <svg class="SVG"
     width="100%"
     height="100%"
     viewBox="0 0 24 24"
@@ -23,3 +23,9 @@
     </g>
   </svg>
 </template>
+
+<style scoped>
+.SVG {
+  color: var(--selected-color);
+}
+</style>

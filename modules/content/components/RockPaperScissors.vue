@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import ContentChild from "~/shared/components/ContentChild.vue";
-import thumbPraxis from "~/public/images/thumb-praxis.png";
+import thumbRPC from "~/public/images/RPC.png";
 </script>
 
 <template>
-  <div class="relative">
+<div class="relative">
     <ContentChild
       :is-link-available="true"
       :is-code-available="true"
       :in-progress="false"
-      :thumbnail-img="thumbPraxis"
+      :thumbnail-img="thumbRPC"
       title="My First Project with React"
-      code-link="https://github.com/Papyrus-Saa/the-praxis"
-      href="https://praxis-sanchez.netlify.app/  "
+      code-link="https://github.com/Papyrus-Saa/Rock-paper-scissors"
+      href="https://papyrus-saa.github.io/Rock-paper-scissors/"
     >
       <div class="flex">
         <!-- <img
@@ -37,5 +37,3 @@ import thumbPraxis from "~/public/images/thumb-praxis.png";
     </ContentChild>
   </div>
 </template>
-
-<style scoped></style>
