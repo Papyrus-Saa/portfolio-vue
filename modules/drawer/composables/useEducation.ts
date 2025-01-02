@@ -6,7 +6,7 @@ export const useEducation = () => {
       title: "Frontend-Entwicklung (selbstständig)",
       content: `
         Ich beschäftige mich intensiv mit HTML, CSS, JavaScript, Vue.js und React-Aufgaben.
-        Ich entwickle derzeit Projekte mit Vue und React.
+        
       `,
       more: `
         Frontend-Entwicklung begeistert mich, weil ich gerne Probleme löse, Neues lerne und kreative Projekte umsetze.
