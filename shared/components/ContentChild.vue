@@ -1,15 +1,15 @@
 <template>
-  <div
-    class="containerDiv relative w-full max-w-[500px] dark:bg-neutral-950 border border-gray-100 dark:border-neutral-900 duration-500 p-4 rounded mb-6 md:mx-auto"
-    @mouseenter="thumbnail = true"
-    @mouseleave="thumbnail = false"
-  >
+ <div
+  class="containerDiv relative w-full max-w-[500px] border border-gray-100 dark:border-neutral-900 p-4 rounded mb-6 md:mx-auto"
+  @mouseenter="thumbnail = true"
+  @mouseleave="thumbnail = false"
+>
     <div class="w-full flex justify-between items-center mb-8">
       <h3 class="font-bold">{{ title }}</h3>
       <a :href="codeLink" target="_blank" rel="noopener noreferrer">
         <span
           v-if="isCodeAvailable"
-          class="p-1 hover:dark:text-blue-600 duration-500 cursor-pointer"
+          class="p-1 hover:dark:text-blue-600  cursor-pointer"
         >
           &lt;/&gt;</span
         >
@@ -41,14 +41,13 @@
 
   <div
     v-if="thumbnail"
-    class="absolute top-0 left-0 w-[200px] h-[140px] pointer-events-none"
+    class="absolute top-0 left-0 w-[100px] h-[80px] pointer-events-none"
   >
     <img
-      class="w-full h-full object-fill"
+      class="image w-full h-full object-fill duration-500"
       :src="thumbnailImg"
-      alt="german-shop-pic"
+      :alt="alt"
     />
-    <!-- src="/assets/img/mini-german-shop.png" -->
   </div>
 </template>
 
@@ -60,6 +59,7 @@ import LinkButton from "~/shared/components/LinkButton.vue";
 interface Props {
   title: string;
   codeLink?: string;
+  alt?: string;
   href?: string;
   inProgress: boolean;
   thumbnailImg?: string;
@@ -73,9 +73,7 @@ defineProps<Props>();
 </script>
 
 <style scoped>
-.containerDiv {
-  box-shadow: 0px 0px 5px 0px  var(--selected-color);
-}
+
 
 .align-end {
   margin-left: auto;
@@ -98,6 +96,15 @@ defineProps<Props>();
   animation: dots-animation 2s infinite;
 }
 
+.image {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 @keyframes dots-animation {
   0% {
     content: "";
@@ -112,4 +119,26 @@ defineProps<Props>();
     content: "...";
   }
 }
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 </style>

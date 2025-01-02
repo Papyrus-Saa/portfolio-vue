@@ -6,6 +6,7 @@ import thumbPraxis from "~/public/images/thumb-praxis.png";
 <template>
   <div class="relative">
     <ContentChild
+      alt="praxis - pic"
       :is-link-available="true"
       :is-code-available="true"
       :in-progress="false"

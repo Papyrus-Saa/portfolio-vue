@@ -6,6 +6,7 @@ import germanShopThumbNail from "~/public/images/image-2.png";
 <template>
   <div class="relative">
     <ContentChild
+    alt="Germanshop - pic"
       :is-link-available="true"
       :is-code-available="true"
       :thumbnail-img="germanShopThumbNail"

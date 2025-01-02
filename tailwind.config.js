@@ -20,11 +20,14 @@ export default {
           light: "rgb(var(--secondary-color) / <alpha-value>)", // Light mode
           dark: "rgb(var(--primary-color) / <alpha-value>)",    // Dark mode
         },
+        boxShadow: {
+          'custom-light': '0px 0px 13px 0px rgba(0, 0, 0, 0.75)', // Modo claro
+          'custom-dark': '0px 0px 13px 0px rgba(122, 122, 122, 1)', // Modo oscuro
+        },
       },
     },
   },
   plugins: [],
-  darkMode: "class", // Activa el soporte para tema oscuro
   darkMode: ["class", ".dark"], // Usa `prefers-color-scheme` (por
 };
 

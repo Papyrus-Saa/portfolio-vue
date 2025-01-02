@@ -6,11 +6,12 @@ import thumbRPC from "~/public/images/RPC.png";
 <template>
 <div class="relative">
     <ContentChild
+      alt="rockpaperscissors - pic"
       :is-link-available="true"
       :is-code-available="true"
       :in-progress="false"
       :thumbnail-img="thumbRPC"
-      title="My First Project with React"
+      title="Rock Paper Scissors"
       code-link="https://github.com/Papyrus-Saa/Rock-paper-scissors"
       href="https://papyrus-saa.github.io/Rock-paper-scissors/"
     >
@@ -22,16 +23,7 @@ import thumbRPC from "~/public/images/RPC.png";
       /> -->
 
         <p class="mb-4">
-          Some time ago, I worked on my first project with React, an experience
-          that allowed me to explore the capabilities of this powerful
-          framework. One of the key features was implementing a Single Page
-          Application (SPA) architecture, enabling pages to update dynamically
-          without the need for a full reload. The focus of the project was to
-          maintain a simple yet effective design tailored to a practical
-          purpose. This experience helped me better understand how React
-          simplifies building modern user interfaces and enhances the experience
-          for both developers and users. It was a great first step in my journey
-          with React development.
+          This project was one of the first I developed when I started learning JavaScript, and I can say it was a very rewarding experience. Although it was challenging at first to grasp the logic needed to make the game work, I gradually understood key concepts like conditionals, events, and functions. Implementing the classic Rock, Paper, Scissors game not only helped me reinforce my foundational JavaScript skills but also improved my problem-solving abilities.
         </p>
       </div>
     </ContentChild>

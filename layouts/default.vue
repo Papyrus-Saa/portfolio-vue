@@ -44,6 +44,8 @@
 
             <RockPaperScissors/>
 
+            <PasswordGenerate/>
+
           </div>
         </div>
       </div>
@@ -70,6 +72,7 @@ import { useDrawerControl } from "~/modules/drawer/composables/useDreawerScroll"
 import MySocialMedia from "~/modules/social-media/MySocialMedia.vue";
 import Banner from "~/modules/header/components/Banner.vue";
 import RockPaperScissors from "~/modules/content/components/RockPaperScissors.vue";
+import PasswordGenerate from "~/modules/content/components/PasswordGenerate.vue";
 
 const initialScreen = ref<boolean>(true);
 
