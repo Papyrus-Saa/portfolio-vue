@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import OpenSetColor from '~/shared/components/OpenSetColor.vue';
+import OpenSetColor from '~/shared-components/shared/OpenSetColor.vue';
 import { useEducation } from '../composables/useEducation';
 
 const {

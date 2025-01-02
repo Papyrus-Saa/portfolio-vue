@@ -4,7 +4,9 @@
     class="flex justify-center items-center fixed top-0 right-0 w-full h-screen z-20 bg-neutral-950 opacity-90"
   >
     <div class="flex flex-col">
-      <h1 class="text-gray-700 font-serif text-xl">Hola, bienvenid@...😊</h1>
+      <h1 class="text-gray-700 font-serif text-xl mb-6">
+        Hola, bienvenid@...😊
+      </h1>
       <button
         @click="offInitailScreen"
         class="px-2 bg-red-700 rounded hover:bg-red-600 text-white"
@@ -19,18 +21,17 @@
       { ' blur-lg': initialScreen },
     ]"
   >
-    <!-- Header -->
-    <!-- Scroll -->
+
     <main class="h-screen overflow-auto">
-      <!-- <div class=" sm:mr-28   sm:mx-auto  sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-4 sm:p-4 lg:justify-items-center w-calc-remaining"> -->
+
       <div class="sm:flex justify-end">
         <Drawer />
         <div :class="['w-full sm:w-calc-remaining']">
-         <Banner/>
+          <Banner />
 
           <HeaderComponent />
           <TitleComponent />
-          <MySocialMedia/>
+          <MySocialMedia />
           <div
             class="grid lg:grid-cols-2 gap-10 place-items-center xl:grid-cols-3 px-12 mb-12"
           >
@@ -42,10 +43,9 @@
 
             <BottomRightContent />
 
-            <RockPaperScissors/>
+            <RockPaperScissors />
 
-            <PasswordGenerate/>
-
+            <PasswordGenerate />
           </div>
         </div>
       </div>
@@ -64,11 +64,11 @@ import TitleComponent from "~/modules/content/components/TitleComponent.vue";
 import Drawer from "~/modules/drawer/components/Drawer.vue";
 import HeaderComponent from "~/modules/header/components/HeaderComponent.vue";
 import InfiniteScroller from "~/modules/InfiniteScroll/components/InfiniteScroller.vue";
-import SetColors from "~/shared/components/SetColors.vue";
+import SetColors from "~/shared-components/shared/SetColors.vue";
 import TopRightContent from "~/modules/content/components/TopRightContent.vue";
 import BottomLeftContent from "~/modules/content/components/BottomLeftContent.vue";
 import BottomRightContent from "~/modules/content/components/BottomRightContent.vue";
-import { useDrawerControl } from "~/modules/drawer/composables/useDreawerScroll";
+
 import MySocialMedia from "~/modules/social-media/MySocialMedia.vue";
 import Banner from "~/modules/header/components/Banner.vue";
 import RockPaperScissors from "~/modules/content/components/RockPaperScissors.vue";
@@ -82,8 +82,7 @@ const offInitailScreen = () => {
   }, 500);
 };
 
-// const { isDrawerOpen, animationClass, openDrawer, closeDrawer } =
-//   useDrawerControl();
+
 </script>
 
 <style scoped>
@@ -103,7 +102,7 @@ const offInitailScreen = () => {
 }
 
 .dots::after {
-  content: "..."; /* Contenido inicial */
+  content: "...";
   display: inline-block;
   animation: dots-animation 2s infinite;
 }

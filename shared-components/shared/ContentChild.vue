@@ -53,8 +53,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import LinkIcon from "../icons/LinkIcon.vue";
-import LinkButton from "~/shared/components/LinkButton.vue";
+import LinkIcon from "~/shared-components/shared/icons/LinkIcon.vue";
+import LinkButton from "~/shared-components/shared/LinkButton.vue";
 
 interface Props {
   title: string;

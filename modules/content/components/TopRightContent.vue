@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import ContentChild from "~/shared/components/ContentChild.vue";
+import ContentChild from "~/shared-components/shared/ContentChild.vue";
 
-import pokemonImg from "~/public/images/image-4.png";
 import pokemonThumbNail from "~/public/images/pokemon-thumnail.png";
 </script>
 <template>

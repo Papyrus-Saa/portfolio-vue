@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IconSlot from "~/shared/components/IconSlot.vue";
+import IconSlot from "~/shared-components/shared/IconSlot.vue";
 </script>
 
 <template>

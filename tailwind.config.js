@@ -6,23 +6,23 @@ export default {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./theme/**/*.{js,vue,ts}",
-    "./shared/**/*.{js,vue,ts}",
+    "./shared-components/**/*.{js,vue,ts}",
     "./app.vue",
     "./error.vue",
     "./assets/css/**/*.css",
   ],
 
-  darkMode: "class", // Habilita el modo oscuro basado en clases
+  darkMode: "class",
   theme: {
     extend: {
       backgroundColor: {
         skin: {
-          light: "rgb(var(--secondary-color) / <alpha-value>)", // Light mode
-          dark: "rgb(var(--primary-color) / <alpha-value>)",    // Dark mode
+          light: "rgb(var(--secondary-color) / <alpha-value>)",
+          dark: "rgb(var(--primary-color) / <alpha-value>)",
         },
         boxShadow: {
-          'custom-light': '0px 0px 13px 0px rgba(0, 0, 0, 0.75)', // Modo claro
-          'custom-dark': '0px 0px 13px 0px rgba(122, 122, 122, 1)', // Modo oscuro
+          'custom-light': '0px 0px 13px 0px rgba(0, 0, 0, 0.75)',
+          'custom-dark': '0px 0px 13px 0px rgba(122, 122, 122, 1)',
         },
       },
     },

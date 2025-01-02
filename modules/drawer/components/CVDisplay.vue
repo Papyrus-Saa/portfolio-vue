@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DownloadIcon from '~/shared/components/DownloadIcon.vue';
+import DownloadIcon from '~/shared-components/shared/DownloadIcon.vue';
 </script>
 
 <template>
@@ -9,13 +9,28 @@ import DownloadIcon from '~/shared/components/DownloadIcon.vue';
       <div class="imgContainerCv p-4">
         <img
           src="/public/images/image-1.png"
-          alt="Imagen de currículum"
+          alt="Img CV"
           class="w-full h-full object-cover"
         />
       </div>
       <a
-        href="/LebenslaufRamon.pdf"
-        download="LebenslaufRamon.pdf"
+        href="/lebensLauf.pdf"
+        download="lebensLauf.pdf"
+        class="flex px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:text-green-500 transition w-fit mx-auto mb-4"
+      >
+        <DownloadIcon />
+      </a>
+      <h3 class="text-xtext-xl font-semibold mb-4 ">Ausbildungszeugnis</h3>
+      <div class="imgContainerCv p-4">
+        <img
+          src="/public/zeugnis.png"
+          alt="Img Zeugnis"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <a
+        href="/Ausbildungszeugnis.pdf"
+        download="Ausbildungszeugnis.pdf"
         class="flex px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:text-green-500 transition w-fit mx-auto mb-4"
       >
         <DownloadIcon />

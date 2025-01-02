@@ -36,6 +36,7 @@ import { ref } from "vue";
 import { useAppTheme } from "../composables/useTheme";
 import ArrowIcon from "../icons/components/ArrowIcon.vue";
 
+
 const { isHidden, toggleTheme, hiddenToggleButton, canToggleTheme } =
   useAppTheme();
 const showShadow = ref(false);

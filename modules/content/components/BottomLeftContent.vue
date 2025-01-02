@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import BarMeaning from "~/modules/drawer/components/BarMeaning.vue";
 import BarPro from "~/modules/drawer/components/BarPro.vue";
-import ContentChild from "~/shared/components/ContentChild.vue";
+import ContentChild from "~/shared-components/shared/ContentChild.vue";
 </script>
 
 <template>

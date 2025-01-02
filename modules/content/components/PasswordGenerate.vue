@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ContentChild from "~/shared/components/ContentChild.vue";
+import ContentChild from "~/shared-components/shared/ContentChild.vue";
 import passwordGenerateThumnail from "~/public/images/password-generate.png";
 </script>
 

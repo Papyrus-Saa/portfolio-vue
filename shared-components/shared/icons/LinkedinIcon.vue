@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import SocialMediaIcon from "../components/SocialMediaIcon.vue";
+import  SocialMediaIcon from '../SocialMediaIcon.vue';
+
+
 </script>
 
 <template>

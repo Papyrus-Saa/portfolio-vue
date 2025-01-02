@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
-import ScrollUpIcon from '~/shared/components/ScrollUpIcon.vue';
+import ScrollUpIcon from '~/shared-components/shared/ScrollUpIcon.vue';
 import { useDrawerControl } from '../modules/drawer/composables/useDreawerScroll';
 
 
@@ -41,7 +41,7 @@ onUnmounted(() => {
     @click="scrollToTop"
     class="drawerUpScroll "
   >
- 
+
   </button>
 
 
