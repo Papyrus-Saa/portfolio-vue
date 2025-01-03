@@ -29,27 +29,27 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 12px; /* Ancho de la barra de desplazamiento */
-  height: 12px; /* Altura de la barra de desplazamiento horizontal */
+  width: 12px;
+  height: 12px;
 }
 
-/* Aplica estilos al track (fondo del scrollbar) */
+
 ::-webkit-scrollbar-track {
-  background: #f4f4f4; /* Color del track */
+  background: #f4f4f4;
   border-radius: 6px;
 }
 
-/* Aplica estilos al thumb (manija de desplazamiento) */
+
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Color del thumb */
+  background: #888;
   border-radius: 6px;
 }
 
-/* Opcional: Estilo del thumb al pasar el mouse */
+
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-/* dark:hover:bg-[#185600] hover:bg-[#5100e8] dark:bg-[#023e3a] bg-[#4c00d2] */
+
 
 Code kopieren .drawerContainer {
   touch-action: none;
@@ -59,89 +59,89 @@ Code kopieren .drawerContainer {
 @keyframes defaultbackgroundshift {
   0%,
   100% {
-    box-shadow: 0px 0px 29px 11px #ff6347; /* Red */
+    box-shadow: 0px 0px 29px 11px #ff6347;
   }
 
   10% {
-    box-shadow: 0px 0px 29px 11px #ff4500; /* Orange Red */
+    box-shadow: 0px 0px 29px 11px #ff4500;
   }
 
   20% {
-    box-shadow: 0px 0px 29px 11px #f1c40f; /* Yellow */
+    box-shadow: 0px 0px 29px 11px #f1c40f;
   }
 
   30% {
-    box-shadow: 0px 0px 29px 11px #2ecc71; /* Green */
+    box-shadow: 0px 0px 29px 11px #2ecc71;
   }
 
   40% {
-    box-shadow: 0px 0px 29px 11px #3498db; /* Blue */
+    box-shadow: 0px 0px 29px 11px #3498db;
   }
 
   50% {
-    box-shadow: 0px 0px 29px 11px #9b59b6; /* Purple */
+    box-shadow: 0px 0px 29px 11px #9b59b6;
   }
 
   60% {
-    box-shadow: 0px 0px 29px 11px #e74c3c; /* Red */
+    box-shadow: 0px 0px 29px 11px #e74c3c;
   }
 
   70% {
-    box-shadow: 0px 0px 29px 11px #8e44ad; /* Purple */
+    box-shadow: 0px 0px 29px 11px #8e44ad;
   }
 
   80% {
-    box-shadow: 0px 0px 29px 11px #1abc9c; /* Teal */
+    box-shadow: 0px 0px 29px 11px #1abc9c;
   }
 
   90% {
-    box-shadow: 0px 0px 29px 11px #34495e; /* Dark Blue */
+    box-shadow: 0px 0px 29px 11px #34495e;
   }
 
   100% {
-    box-shadow: 0px 0px 29px 11px #f39c12; /* Orange */
+    box-shadow: 0px 0px 29px 11px #f39c12;
   }
 
   110% {
-    box-shadow: 0px 0px 29px 11px #e67e22; /* Orange */
+    box-shadow: 0px 0px 29px 11px #e67e22;
   }
 
   120% {
-    box-shadow: 0px 0px 29px 11px #2980b9; /* Blue */
+    box-shadow: 0px 0px 29px 11px #2980b9;
   }
 }
 
 @keyframes defaultbordershift {
   0%,
   100% {
-    color: #ff6347; /* Red */
+    color: #ff6347;
   }
 
   10% {
-    color: #ff4500; /* Orange Red */
+    color: #ff4500;
   }
 
   20% {
-    color: #f1c40f; /* Yellow */
+    color: #f1c40f;
   }
 
   30% {
-    color: #2ecc71; /* Green */
+    color: #2ecc71;
   }
 
   40% {
-    color: #3498db; /* Blue */
+    color: #3498db;
   }
 
   50% {
-    color: #9b59b6; /* Purple */
+    color: #9b59b6;
   }
 
   60% {
-    color: #e74c3c; /* Red */
+    color: #e74c3c;
   }
 
   70% {
-    color: #8e44ad; /* Purple */
+    color: #8e44ad;
   }
 }
