@@ -1,6 +1,6 @@
 <template>
   <div class="drawer">
-    <button @click="openDrawer" class="fixed top-0 left-0 sm:hidden">
+    <button @click="openDrawer" class="fixed top-0 left-0 z-10 sm:hidden">
       <!-- AdminIcon -->
       <AdminIcon />
     </button>

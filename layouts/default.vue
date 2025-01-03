@@ -33,7 +33,7 @@
           <TitleComponent />
           <MySocialMedia />
           <div
-            class="grid lg:grid-cols-2 gap-10 place-items-center xl:grid-cols-3 px-12 mb-12"
+            class="grid lg:grid-cols-2 gap-10 place-items-center xl:grid-cols-3 lg:px-12 mb-12"
           >
             <TopLeftContent />
 
