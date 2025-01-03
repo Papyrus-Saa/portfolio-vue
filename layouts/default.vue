@@ -4,12 +4,12 @@
     class="colorShadow flex justify-center items-center fixed top-0 right-0 w-full h-screen z-20 bg-black opacity-90"
   >
     <div class="flex flex-col">
-      <h1 class="text-white font-serif text-2xl mb-6">
-        Hola, bienvenid@...😊
+      <h1 class="text-white font-serif text-4xl mb-6">
+        Hola, bienvenid@ !!!
       </h1>
       <button
         @click="offInitailScreen"
-        class="colorShadow  px-2 bg-red-700 rounded hover:bg-red-600 text-white"
+        class="colorShadow w-fit px-1 mx-auto  bg-red-700 rounded hover:bg-red-600 text-white"
       >
         Start
       </button>
