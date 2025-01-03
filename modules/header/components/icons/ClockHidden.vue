@@ -1,12 +1,10 @@
 <template>
-  <IconSlot>
+  <div class="w-4 h-4  flex justify-center items-center">
     <svg
+    class="colorAnimated"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="currentColor"
-      width="100%"
-      height="100%"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
@@ -16,31 +14,19 @@
       ></g>
       <g id="SVGRepo_iconCarrier">
         <path
-          d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5"
+          d="M20 4V20M4 12H16M4 12L8 8M4 12L8 16"
           stroke="currentColor"
-          stroke-width="1.5"
+          stroke-width="2"
           stroke-linecap="round"
-        ></path>
-        <path
-          d="M22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C21.5093 4.43821 21.8356 5.80655 21.9449 8"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
+          stroke-linejoin="round"
         ></path>
       </g>
     </svg>
-  </IconSlot>
+  </div>
 </template>
 
-<style scoped></style>
-
-
-
-
-
-
-<script setup lang="ts">
-import IconSlot from '~/shared-components/shared/IconSlot.vue';
-
-
-</script>
+<style scoped>
+.colorAnimated {
+  animation: defaultbordershift 10s infinite linear;
+}
+</style>

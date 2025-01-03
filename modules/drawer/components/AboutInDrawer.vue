@@ -1,8 +1,7 @@
 <template>
   <div>
     <h3 class="text-center font-mono mb-16 p-1">
-      Frontend-Entwicklung verbindet Ästhetik mit Funktionalität und schafft
-      Erlebnisse, die inspirieren.
+      Frontend development combines aesthetics with functionality, creating experiences that inspire.
     </h3>
 
     <BarPro/>

@@ -7,4 +7,9 @@
 
 <style scoped>
 
+.colorIcon {
+  box-shadow: 0px 0px 18px 3px var(--selected-color);
+  animation: defaultbackgroundshift 20s infinite linear;
+}
+
 </style>

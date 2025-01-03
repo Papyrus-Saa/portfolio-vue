@@ -1,6 +1,6 @@
 <template>
   <div class="drawer">
-    <button @click="openDrawer" class="fixed top-0 left-0 z-10 sm:hidden">
+    <button @click="openDrawer" class="fixed top-0 left-0 z-10 sm:hidden text-white">
       <!-- AdminIcon -->
       <AdminIcon />
     </button>
@@ -20,8 +20,8 @@
         <ImgComponent />
       </div>
       <div class="p-4 text-center">
-        <h1 class="text-xl font-light opacity-1">
-          Willkommen auf meinem Profil...
+        <h1 class="text-xl font-bold opacity-1">
+          Welcome to my profile!
         </h1>
       </div>
       <!-- AboutInDrawer -->

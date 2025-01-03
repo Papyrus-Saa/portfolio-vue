@@ -20,45 +20,45 @@
 const barInfo = [
   {
     name: "HTML",
-    details: "HTML Markup für Webseiten",
+    details: "HTML markup for web pages",
     separator: "|",
     color: "#dc2626",
   },
   {
     name: "CSS",
-    details: "CSS Styling für Webseiten",
+    details: "CSS styling for web pages",
     separator: "|",
     color: "#1572B6",
   },
   {
     name: "JS",
-    details: "JavaScript Interaktive Funktionen",
+    details: "JavaScript for interactive functionality",
     separator: "|",
     color: "#F7DF1E",
   },
   {
     name: "TS",
-    details: "TypeScript Typisierte JavaScript",
+    details: "TypeScript - typed JavaScript",
     separator: "|",
     color: "#3178C6",
   },
   {
     name: "VUE",
-    details: "Vue JS Framework für UI",
+    details: "Vue.js framework for UI",
     separator: "|",
     color: "#42b883",
   },
   {
     name: "TW",
-    details: "Tailwind CSS-Framework",
+    details: "Tailwind CSS framework",
     separator: "|",
     color: "#38B2AC",
   },
   {
-    "name": "Rc",
-  "details": "React Library for interfaces.",
-  "separator": "|",
-  "color": "#61DAFB"
+    name: "Rc",
+    details: "React library for interfaces",
+    separator: "|",
+    color: "#61DAFB",
   },
 ];
 </script>

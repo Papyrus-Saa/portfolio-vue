@@ -1,15 +1,15 @@
 <template>
   <div
-    v-if="initialScreen"
-    class="flex justify-center items-center fixed top-0 right-0 w-full h-screen z-20 bg-neutral-950 opacity-90"
+    v-if=" initialScreen"
+    class="colorShadow flex justify-center items-center fixed top-0 right-0 w-full h-screen z-20 bg-black opacity-90"
   >
     <div class="flex flex-col">
-      <h1 class="text-gray-700 font-serif text-xl mb-6">
+      <h1 class="text-white font-serif text-2xl mb-6">
         Hola, bienvenid@...😊
       </h1>
       <button
         @click="offInitailScreen"
-        class="px-2 bg-red-700 rounded hover:bg-red-600 text-white"
+        class="colorShadow  px-2 bg-red-700 rounded hover:bg-red-600 text-white"
       >
         Start
       </button>
@@ -21,9 +21,7 @@
       { ' blur-lg': initialScreen },
     ]"
   >
-
     <main class="h-screen overflow-auto">
-
       <div class="sm:flex justify-end">
         <Drawer />
         <div :class="['w-full sm:w-calc-remaining']">
@@ -81,44 +79,12 @@ const offInitailScreen = () => {
     initialScreen.value = false;
   }, 500);
 };
-
-
 </script>
 
 <style scoped>
-.align-end {
-  margin-left: auto;
-}
-.loading-dots {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  position: relative;
+.colorShadow {
+  animation: defaultbackgroundshift 20s infinite linear;
 }
 
-.dots {
-  display: inline-block;
-  width: 1em;
-  text-align: left;
-}
 
-.dots::after {
-  content: "...";
-  display: inline-block;
-  animation: dots-animation 2s infinite;
-}
-
-@keyframes dots-animation {
-  0% {
-    content: "";
-  }
-  33% {
-    content: ".";
-  }
-  66% {
-    content: "..";
-  }
-  100% {
-    content: "...";
-  }
-}
 </style>

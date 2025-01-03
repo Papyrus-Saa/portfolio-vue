@@ -20,7 +20,7 @@ import DownloadIcon from '~/shared-components/shared/DownloadIcon.vue';
       >
         <DownloadIcon />
       </a> -->
-      <h3 class="text-xtext-xl font-semibold mb-4 ">Ausbildungszeugnis</h3>
+      <h3 class="text-xtext-xl font-semibold mb-4 ">Training Certificate</h3>
       <div class="imgContainerCv p-4">
         <img
           src="/public/zeugnis.png"

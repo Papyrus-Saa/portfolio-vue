@@ -3,59 +3,57 @@ import { ref, onMounted, onUnmounted } from "vue";
 export const useEducation = () => {
   const educationData = [
     {
-      title: "Frontend-Entwicklung (selbstständig)",
+      title: "Frontend Development (Self-taught)",
       content: `
-        Ich beschäftige mich intensiv mit HTML, CSS, JavaScript, Vue.js und React-Aufgaben.
-        
+        I am deeply involved in tasks related to HTML, CSS, JavaScript, Vue.js, and React.
       `,
       more: `
-        Frontend-Entwicklung begeistert mich, weil ich gerne Probleme löse, Neues lerne und kreative Projekte umsetze.
-        Ich werde auch in der Zukunft React wiederaufgreifen, da ich beide Frameworks sehr schätze.
+        I am passionate about frontend development because I enjoy solving problems, learning new things, and working on creative projects.
+        I plan to revisit React in the future as I appreciate both frameworks greatly.
       `,
     },
     {
-      "title": "Anlagenmechaniker (in Ausbildung)",
-      "content": `
-        Beginn einer praktischen Ausbildung zum Anlagenmechaniker in Deutschland.
+      title: "Plant Mechanic (in training)",
+      content: `
+        Began practical training as a plant mechanic in Germany.
       `,
-      "more": `
-        Während eines Jahres in der Ausbildung habe ich grundlegende technische Fähigkeiten und Kenntnisse im Umgang mit Anlagen und Systemen erlangt. Ich habe jedoch festgestellt, dass dieser Beruf nicht meinen langfristigen Interessen entspricht und die Ausbildung daraufhin beendet.
+      more: `
+        During a year of training, I gained basic technical skills and knowledge in handling machinery and systems. However, I realized this profession did not align with my long-term interests, so I decided to end the training.
       `,
     },
 
     {
-      title: "Spanisch-Studium",
+      title: "Spanish Studies",
       content: `
-        Abgeschlossenes Studium in Sprachwissenschaften in Venezuela.
+        Completed a degree in Linguistics in Venezuela.
       `,
       more: `
-        Das Studium half mir, analytische Fähigkeiten zu entwickeln und neue Kommunikationswege zu erlernen.
+        This degree helped me develop analytical skills and explore new ways of communication.
       `,
     },
     {
-      title: "Managementassistent (Kompaktkurs)",
+      title: "Management Assistant (Compact Course)",
       content: `
-        Einjährige Ausbildung mit Fokus auf Organisation und Teamarbeit.
+        One-year training focused on organization and teamwork.
       `,
       more: `
-        Dieser Kurs hat mir wertvolle administrative Kenntnisse vermittelt.
+        This course provided me with valuable administrative knowledge.
       `,
     },
     {
-      title: "Realschulabschluss",
+      title: "High School Diploma",
       content: `
-        Grundlegende schulische Ausbildung in Venezuela.
+        Basic secondary education in Venezuela.
       `,
       more: `
-        Hier habe ich meine grundlegenden akademischen Fähigkeiten aufgebaut.
+        This is where I built my foundational academic skills.
       `,
     },
   ];
 
-  // Estado reactivo
+  // Reactive state
   const selectedIndex = ref<number | null>(null);
   const showMore = ref(false);
-
 
   const handleClickOutside = (event: MouseEvent) => {
     const card = document.querySelector(".education-card");
@@ -65,20 +63,19 @@ export const useEducation = () => {
     }
   };
 
-  // Métodos para controlar el estado
+  // Methods to control state
   const selectItem = (index: number) => {
     if (selectedIndex.value === index) {
-      selectedIndex.value = null; // Cierra la tarjeta si ya está seleccionada
+      selectedIndex.value = null; // Close the card if already selected
     } else {
-      selectedIndex.value = index; // Actualiza el contenido de la tarjeta
-      showMore.value = false; // Reinicia el estado del "Mehr lesen"
+      selectedIndex.value = index; // Update the card content
+      showMore.value = false; // Reset the "Read More" state
     }
   };
 
   const toggleShowMore = () => {
     showMore.value = !showMore.value;
   };
-
 
   onMounted(() => {
     window.addEventListener("click", handleClickOutside);
