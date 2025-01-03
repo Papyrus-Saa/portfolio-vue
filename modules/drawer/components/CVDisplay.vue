@@ -4,7 +4,7 @@ import DownloadIcon from '~/shared-components/shared/DownloadIcon.vue';
 
 <template>
     <div class="flex flex-col items-center text-center  p-6 mx-auto  rounded-md mb-20">
-      <h3 class="text-xtext-xl font-semibold mb-4 ">Lebenslauf</h3>
+      <!-- <h3 class="text-xtext-xl font-semibold mb-4 ">Lebenslauf</h3>
 
       <div class="imgContainerCv p-4">
         <img
@@ -15,11 +15,11 @@ import DownloadIcon from '~/shared-components/shared/DownloadIcon.vue';
       </div>
       <a
         href="/lebensLauf.pdf"
-        download="lebensLauf.pdf"
+        download="lebensLaufRamon.pdf"
         class="flex px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:text-green-500 transition w-fit mx-auto mb-4"
       >
         <DownloadIcon />
-      </a>
+      </a> -->
       <h3 class="text-xtext-xl font-semibold mb-4 ">Ausbildungszeugnis</h3>
       <div class="imgContainerCv p-4">
         <img
