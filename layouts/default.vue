@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if=" initialScreen"
+    v-if="initialScreen"
     class="colorShadow flex justify-center items-center fixed top-0 right-0 w-full h-screen z-20 bg-black opacity-90"
   >
     <div class="flex flex-col">

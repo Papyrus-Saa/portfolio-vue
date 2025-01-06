@@ -1,5 +1,5 @@
 <template>
-  <div class="w-4 h-4  flex justify-center items-center">
+  <div class="w-4 h-4  flex justify-center items-center cursor-pointer">
     <svg
     class="colorAnimated"
       viewBox="0 0 24 24"
