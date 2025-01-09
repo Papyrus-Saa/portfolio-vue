@@ -2,7 +2,7 @@
   <div class="skills-container hidden md:block">
     <div>
       <ul class="list-none flex">
-        <li class="mr-4 flex flex-wrap" v-for="skill in knownSkills" :key="skill">{{ skill }}</li>
+        <li class=" mr-4 flex flex-wrap font-bold" v-for="skill in knownSkills" :key="skill">{{ skill }}</li>
       </ul>
     </div>
   </div>

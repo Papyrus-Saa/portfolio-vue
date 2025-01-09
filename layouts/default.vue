@@ -4,12 +4,10 @@
     class="colorShadow flex justify-center items-center fixed top-0 right-0 w-full h-screen z-20 bg-black opacity-90"
   >
     <div class="flex flex-col">
-      <h1 class="text-white font-serif text-4xl mb-6">
-        Hola, bienvenid@ !!!
-      </h1>
+      <h1 class="text-white font-serif text-4xl mb-6">Hola, bienvenid@ !!!</h1>
       <button
         @click="offInitailScreen"
-        class="colorShadow w-fit px-1 mx-auto  bg-red-700 rounded hover:bg-red-600 text-white"
+        class="colorShadow w-fit px-1 mx-auto bg-red-700 rounded hover:bg-red-600 text-white"
       >
         Start
       </button>
@@ -33,17 +31,19 @@
           <div
             class="grid lg:grid-cols-2 gap-10 place-items-center xl:grid-cols-3 lg:px-12 mb-12"
           >
+            <!-- <OpenAi /> -->
+
             <TopLeftContent />
 
             <TopRightContent />
-
-            <BottomLeftContent />
 
             <BottomRightContent />
 
             <RockPaperScissors />
 
             <PasswordGenerate />
+
+            <BottomLeftContent />
           </div>
         </div>
       </div>
@@ -71,6 +71,7 @@ import MySocialMedia from "~/modules/social-media/MySocialMedia.vue";
 import Banner from "~/modules/header/components/Banner.vue";
 import RockPaperScissors from "~/modules/content/components/RockPaperScissors.vue";
 import PasswordGenerate from "~/modules/content/components/PasswordGenerate.vue";
+import OpenAi from "~/modules/open-ai/OpenAi.vue";
 
 const initialScreen = ref<boolean>(true);
 
@@ -85,6 +86,4 @@ const offInitailScreen = () => {
 .colorShadow {
   animation: defaultbackgroundshift 20s infinite linear;
 }
-
-
 </style>
