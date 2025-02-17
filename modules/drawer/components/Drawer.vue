@@ -15,7 +15,7 @@
         <div class=""">
           <!-- ColoseAdmin -->
           <ClockHidden class="sm:hidden" v-if="isDrawerOpen" @click="closeDrawer" />
-          <span class="ml-1 text-xs">Close Menu</span>
+          <span class="ml-1 text-xs sm:hidden">Close Menu</span>
         </div>
         <!-- ImgComponent -->
         <ImgComponent />
