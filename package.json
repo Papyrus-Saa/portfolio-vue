@@ -12,6 +12,7 @@
     "deploy": "npm run build && npm run start"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.2.0",
     "@primevue/themes": "^4.2.5",
     "@vueuse/core": "^12.3.0",
     "howler": "^2.2.4",

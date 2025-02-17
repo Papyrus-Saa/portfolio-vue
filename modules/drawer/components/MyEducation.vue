@@ -1,9 +1,9 @@
 <template>
-  <section class="education-section p-2 mx-auto rounded-md mb-10">
-    <h2 class="text-xl font-semibold mb-4 text-center">
+  <section class="p-2 mx-auto mb-10 rounded-md education-section">
+    <h2 class="mb-4 text-xl font-semibold text-center">
       Education and Training
     </h2>
-    <ul class="space-y-3 p-6">
+    <ul class="p-6 space-y-3">
       <li
         v-for="(item, index) in educationData"
         :key="index"
@@ -11,21 +11,21 @@
       >
         {{ item.title }}
         <OpenSetColor
-          class="hover:bg-gray-500 cursor-pointer duration-500 rounded-sm"
+          class="duration-500 rounded-sm cursor-pointer hover:bg-gray-500"
           @click.stop="selectItem(index)"
         />
       </li>
     </ul>
 
-    <div v-if="selectedIndex !== null" class="education-card p-4">
-      <h3 class="text-lg font-medium mb-2">
+    <div v-if="selectedIndex !== null" class="p-4 education-card">
+      <h3 class="mb-2 text-lg font-medium">
         {{ educationData[selectedIndex].title }}
       </h3>
       <p class="mb-4">
         {{ educationData[selectedIndex].content }}
       </p>
       <button
-        class="dark:text-gray-600 text-sm underline hover:text-blue-800"
+        class="text-sm underline dark:text-gray-600 hover:text-blue-800"
         @click.stop="toggleShowMore"
       >
         {{ showMore ? "Read less" : "Read more" }}
@@ -35,6 +35,8 @@
       </p>
     </div>
   </section>
+
+  <div class="w-full h-px bg-black dark:bg-slate-500"/>
 </template>
 
 <script setup lang="ts">

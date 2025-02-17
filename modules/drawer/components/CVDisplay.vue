@@ -3,35 +3,38 @@ import DownloadIcon from '~/shared-components/shared/DownloadIcon.vue';
 </script>
 
 <template>
-    <div class="flex flex-col items-center text-center  p-6 mx-auto  rounded-md mb-20">
-      <!-- <h3 class="text-xtext-xl font-semibold mb-4 ">Lebenslauf</h3>
+    <div class="flex flex-col items-center p-6 mx-auto mb-20 text-center rounded-md">
+      <!-- <h3 class="mb-4 font-semibold text-xtext-xl ">Lebenslauf</h3>
 
-      <div class="imgContainerCv p-4">
+      <div class="p-4 imgContainerCv">
         <img
           src="/public/images/image-1.png"
           alt="Img CV"
-          class="w-full h-full object-cover"
+          class="object-cover w-full h-full"
         />
       </div>
       <a
         href="/lebensLauf.pdf"
         download="lebensLaufRamon.pdf"
-        class="flex px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:text-green-500 transition w-fit mx-auto mb-4"
+        class="flex px-4 py-2 mx-auto mb-4 transition bg-gray-100 rounded dark:bg-gray-800 hover:text-green-500 w-fit"
       >
         <DownloadIcon />
       </a> -->
-      <h3 class="text-xtext-xl font-semibold mb-4 ">Training Certificate</h3>
-      <div class="imgContainerCv p-4">
+       <h2 class="px-3 py-1 mb-4 border-b">Reference</h2>
+
+
+      <h3 class="mb-4 font-semibold text-xtext-xl ">Training Certificate</h3>
+      <div class="p-4 imgContainerCv">
         <img
           src="/public/zeugnis.png"
           alt="Img Zeugnis"
-          class="w-full h-full object-cover"
+          class="object-cover w-full h-full"
         />
       </div>
       <a
         href="/Ausbildungszeugnis.pdf"
         download="Ausbildungszeugnis.pdf"
-        class="flex px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:text-green-500 transition w-fit mx-auto mb-4"
+        class="flex px-4 py-2 mx-auto mb-4 transition bg-gray-100 rounded dark:bg-gray-800 hover:text-green-500 w-fit"
       >
         <DownloadIcon />
       </a>

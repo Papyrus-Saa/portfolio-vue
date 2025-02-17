@@ -1,6 +1,6 @@
 <template>
   <div class="drawer">
-    <button @click="openDrawer" class="fixed top-0 left-0 z-10 sm:hidden text-white">
+    <button @click="openDrawer" class="fixed top-0 left-0 z-10 text-white sm:hidden">
       <!-- AdminIcon -->
       <AdminIcon />
     </button>
@@ -12,9 +12,10 @@
       :class="animationClass"
     >
       <div class="flex justify-between">
-        <div class="">
+        <div class=""">
           <!-- ColoseAdmin -->
           <ClockHidden class="sm:hidden" v-if="isDrawerOpen" @click="closeDrawer" />
+          <span class="ml-1 text-xs">Close Menu</span>
         </div>
         <!-- ImgComponent -->
         <ImgComponent />
